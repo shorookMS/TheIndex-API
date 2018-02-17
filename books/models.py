@@ -5,6 +5,7 @@ class Author(models.Model):
     created = models.DateTimeField(auto_now_add=True)
     first_name = models.CharField(max_length=255)
     last_name = models.CharField(max_length=255)
+    imageUrl = models.CharField(max_length=255, blank=True, default="")
 
     @property
     def full_name(self):
@@ -18,8 +19,19 @@ class Author(models.Model):
 
 
 class Book(models.Model):
+    COLOR_CHOICES = (
+        ('R', 'red'),
+        ('B', 'blue'),
+        ('G', 'green'),
+        ('Y', 'yellow'),
+        ('K', 'black'),
+        ('W', 'white'),
+        ('Gr', 'grey'),
+    )
     created = models.DateTimeField(auto_now_add=True)
     title = models.CharField(max_length=255)
+    available = models.BooleanField(default=True)
+    color = models.CharField(max_length=2, choices=COLOR_CHOICES)
     authors = models.ManyToManyField(Author, related_name='books')
 
     def __str__(self):

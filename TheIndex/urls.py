@@ -19,7 +19,14 @@ from django.urls import path, include
 from rest_framework import routers
 from books import views
 
-router = routers.DefaultRouter()
+
+class OptionalSlashRouter(routers.DefaultRouter):
+    def __init__(self):
+        self.trailing_slash = '/?'
+        super(routers.DefaultRouter, self).__init__()
+
+
+router = OptionalSlashRouter()
 router.register(r'books', views.BookViewSet)
 router.register(r'authors', views.AuthorViewSet)
 

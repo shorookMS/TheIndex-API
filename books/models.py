@@ -27,6 +27,7 @@ class Book(models.Model):
         ('K', 'black'),
         ('W', 'white'),
         ('Gr', 'grey'),
+        ('P', 'purple'),
     )
     created = models.DateTimeField(auto_now_add=True)
     title = models.CharField(max_length=255)

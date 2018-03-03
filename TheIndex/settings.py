@@ -28,7 +28,7 @@ SECRET_KEY = config(
 )
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = config('DEBUG', default=False, cast=bool)
+DEBUG = config('DEBUG', default=True, cast=bool)
 
 ALLOWED_HOSTS = []
 
@@ -84,7 +84,7 @@ DATABASES = {
     'default': dj_database_url.config(
         default=config(
             'DATABASE_URL',
-            default=os.path.join(BASE_DIR, 'db.sqlite3')
+            default="sqlite:///" + os.path.join(BASE_DIR, 'db.sqlite3')
         )
     )
 }

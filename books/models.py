@@ -16,7 +16,7 @@ class Author(models.Model):
         return self.full_name
 
     class Meta:
-        ordering = ['-last_name', '-first_name']
+        ordering = ['last_name', 'first_name']
 
 
 class Book(models.Model):

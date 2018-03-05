@@ -388,4 +388,64 @@
     "color": "G",
     "authors": [10]
   }
+}, {
+  "model": "books.book",
+  "pk": 40,
+  "fields": {
+    "created": "2018-03-05T12:12:00.671Z",
+    "title": "Jane Eyre",
+    "available": true,
+    "color": "K",
+    "authors": [11]
+  }
+}, {
+  "model": "books.book",
+  "pk": 41,
+  "fields": {
+    "created": "2018-03-05T12:17:11.613Z",
+    "title": "How to Live Safely in a Science Fictional Universe",
+    "available": true,
+    "color": "R",
+    "authors": [12]
+  }
+}, {
+  "model": "books.book",
+  "pk": 42,
+  "fields": {
+    "created": "2018-03-05T12:17:49.407Z",
+    "title": "Sorry Please Thank You",
+    "available": true,
+    "color": "W",
+    "authors": [12]
+  }
+}, {
+  "model": "books.book",
+  "pk": 43,
+  "fields": {
+    "created": "2018-03-05T12:19:07.679Z",
+    "title": "The Importance of Being Earnest",
+    "available": true,
+    "color": "K",
+    "authors": [13]
+  }
+}, {
+  "model": "books.book",
+  "pk": 44,
+  "fields": {
+    "created": "2018-03-05T12:20:11.854Z",
+    "title": "The Picture of Dorian Gray",
+    "available": true,
+    "color": "Gr",
+    "authors": [13]
+  }
+}, {
+  "model": "books.book",
+  "pk": 45,
+  "fields": {
+    "created": "2018-03-05T12:20:54.090Z",
+    "title": "The Selfish Giant",
+    "available": true,
+    "color": "B",
+    "authors": [13]
+  }
 }]

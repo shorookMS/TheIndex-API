@@ -88,4 +88,31 @@
     "last_name": "Rowell",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Rainbow_Rowell.jpg/220px-Rainbow_Rowell.jpg"
   }
+}, {
+  "model": "books.author",
+  "pk": 11,
+  "fields": {
+    "created": "2018-03-05T12:10:36.762Z",
+    "first_name": "Charlotte",
+    "last_name": "Bront\u00eb",
+    "imageUrl": "https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_80%2Cw_300/MTE4MDAzNDEwNzg2ODc4OTkw/charlotte-bronte-11919959-1-402.jpg"
+  }
+}, {
+  "model": "books.author",
+  "pk": 12,
+  "fields": {
+    "created": "2018-03-05T12:13:25.109Z",
+    "first_name": "Charles",
+    "last_name": "Yu",
+    "imageUrl": "https://www.kcrw.com/news-culture/shows/bookworm/charles-yu-how-to-live-safely-in-a-science-fictional-universe/@@images/square_image/feature"
+  }
+}, {
+  "model": "books.author",
+  "pk": 13,
+  "fields": {
+    "created": "2018-03-05T12:18:41.633Z",
+    "first_name": "Oscar",
+    "last_name": "Wilde",
+    "imageUrl": "https://mgtowmind.files.wordpress.com/2017/12/oscar-wilde-3.jpg?w=1000"
+  }
 }]

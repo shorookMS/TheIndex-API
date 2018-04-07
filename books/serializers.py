@@ -24,10 +24,7 @@ class BookSerializer(serializers.ModelSerializer):
 
 class BookListingField(serializers.RelatedField):
     def to_representation(self, value):
-        return {
-            "title": value.title,
-            "url": value.get_absolute_url()
-        }
+        return value.id
 
 
 class AuthorListSerializer(serializers.ModelSerializer):

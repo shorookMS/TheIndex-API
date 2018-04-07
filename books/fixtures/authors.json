@@ -86,7 +86,7 @@
     "created": "2018-03-05T10:49:27.443Z",
     "first_name": "Rainbow",
     "last_name": "Rowell",
-    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Rainbow_Rowell.jpg/220px-Rainbow_Rowell.jpg"
+    "imageUrl": "https://vignette.wikia.nocookie.net/marveldatabase/images/b/b5/Rainbow_Rowell_%28Earth-1218%29_001.jpg/revision/latest?cb=20180123185455"
   }
 }, {
   "model": "books.author",

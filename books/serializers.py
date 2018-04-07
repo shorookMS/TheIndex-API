@@ -2,12 +2,18 @@ from rest_framework import serializers
 from .models import Author, Book
 
 
+class AuthorListingField(serializers.RelatedField):
+    def to_representation(self, value):
+        return f'{value.first_name} {value.last_name}'
+
+
 class BookSerializer(serializers.ModelSerializer):
     color = serializers.SerializerMethodField()
+    authors = AuthorListingField(many=True, read_only=True)
 
     class Meta:
         model = Book
-        exclude = ('authors',)
+        exclude = ('created', 'available')
 
     def get_color(self, obj):
         return obj.get_color_display()

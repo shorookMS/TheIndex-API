@@ -115,4 +115,22 @@
     "last_name": "Wilde",
     "imageUrl": "https://mgtowmind.files.wordpress.com/2017/12/oscar-wilde-3.jpg?w=1000"
   }
+}, {
+  "model": "books.author",
+  "pk": 14,
+  "fields": {
+    "created": "2018-03-05T12:18:41.633Z",
+    "first_name": "Terry",
+    "last_name": "Pratchett",
+    "imageUrl": "http://pixel.nymag.com/imgs/daily/vulture/2015/03/12/12-terry-pratchett-1.w529.h529.jpg"
+  }
+}, {
+  "model": "books.author",
+  "pk": 15,
+  "fields": {
+    "created": "2018-03-05T12:18:41.633Z",
+    "first_name": "Neil",
+    "last_name": "Gaiman",
+    "imageUrl": "http://www.portsmouthguildhall.org.uk/GenerateImage.aspx?file=images/articles/a60375_crop_Neil%20Gaiman.jpg&resize=T&height=600&width=600&s=521964038"
+  }
 }]

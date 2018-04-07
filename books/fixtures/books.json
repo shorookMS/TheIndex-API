@@ -448,4 +448,64 @@
     "color": "B",
     "authors": [13]
   }
+}, {
+  "model": "books.book",
+  "pk": 46,
+  "fields": {
+    "created": "2018-03-05T12:20:54.090Z",
+    "title": "Good Omens",
+    "available": true,
+    "color": "K",
+    "authors": [14, 15]
+  }
+}, {
+  "model": "books.book",
+  "pk": 47,
+  "fields": {
+    "created": "2018-03-05T12:20:54.090Z",
+    "title": "Neverwhere",
+    "available": true,
+    "color": "G",
+    "authors": [15]
+  }
+}, {
+  "model": "books.book",
+  "pk": 48,
+  "fields": {
+    "created": "2018-03-05T12:20:54.090Z",
+    "title": "Coraline",
+    "available": true,
+    "color": "P",
+    "authors": [15]
+  }
+}, {
+  "model": "books.book",
+  "pk": 49,
+  "fields": {
+    "created": "2018-03-05T12:20:54.090Z",
+    "title": "The Color of Magic",
+    "available": true,
+    "color": "O",
+    "authors": [14]
+  }
+}, {
+  "model": "books.book",
+  "pk": 50,
+  "fields": {
+    "created": "2018-03-05T12:20:54.090Z",
+    "title": "Wee Free Men",
+    "available": true,
+    "color": "B",
+    "authors": [14]
+  }
+}, {
+  "model": "books.book",
+  "pk": 51,
+  "fields": {
+    "created": "2018-03-05T12:20:54.090Z",
+    "title": "The Hogfather",
+    "available": true,
+    "color": "Y",
+    "authors": [14]
+  }
 }]

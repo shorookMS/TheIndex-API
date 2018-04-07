@@ -4,7 +4,10 @@ from .models import Author, Book
 
 class AuthorListingField(serializers.RelatedField):
     def to_representation(self, value):
-        return f'{value.first_name} {value.last_name}'
+        return {
+            "name": value.full_name,
+            "url": value.get_absolute_url()
+        }
 
 
 class BookSerializer(serializers.ModelSerializer):

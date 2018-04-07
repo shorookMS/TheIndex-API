@@ -22,7 +22,6 @@ class AuthorViewSet(viewsets.ReadOnlyModelViewSet):
 
     def get_serializer_class(self):
         if self.action == 'list':
-            time.sleep(3)
             return AuthorListSerializer
         if self.action == 'retrieve':
             return AuthorDetailSerializer

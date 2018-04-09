@@ -47,4 +47,4 @@ class Book(models.Model):
         return reverse('book-detail', args=[self.id])
 
     class Meta:
-        ordering = ['-title', ]
+        ordering = ['title', ]

@@ -6,7 +6,7 @@ class AuthorListingField(serializers.RelatedField):
     def to_representation(self, value):
         return {
             "name": value.full_name,
-            "url": value.get_absolute_url()
+            "id": value.id
         }
 
 

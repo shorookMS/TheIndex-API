@@ -16,7 +16,7 @@ class BookSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Book
-        exclude = ('created', 'available')
+        exclude = ('created',)
 
     def get_color(self, obj):
         return obj.get_color_display()

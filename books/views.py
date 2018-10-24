@@ -6,7 +6,7 @@ from .models import Author, Book
 from .serializers import AuthorListSerializer, AuthorDetailSerializer, BookSerializer
 
 
-class BookViewSet(viewsets.ReadOnlyModelViewSet):
+class BookViewSet(viewsets.ModelViewSet):
     """
     API endpoint that allows books to be viewed
     """
@@ -14,7 +14,7 @@ class BookViewSet(viewsets.ReadOnlyModelViewSet):
     serializer_class = BookSerializer
 
 
-class AuthorViewSet(viewsets.ReadOnlyModelViewSet):
+class AuthorViewSet(viewsets.ModelViewSet):
     """
     API endpoint that allows authors to be viewed
     """
@@ -25,4 +25,4 @@ class AuthorViewSet(viewsets.ReadOnlyModelViewSet):
             return AuthorListSerializer
         if self.action == 'retrieve':
             return AuthorDetailSerializer
-        return serializers.Default
+        return AuthorDetailSerializer
